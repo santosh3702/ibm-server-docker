@@ -1,17 +1,3 @@
-# © Copyright IBM Corporation 2015, 2017
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-# http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 FROM ubuntu:16.04
 
 LABEL maintainer "Goru Santosh Rahul <gorusantosh.rahul1@tcs.com>"
@@ -20,7 +6,7 @@ LABEL maintainer "Goru Santosh Rahul <gorusantosh.rahul1@tcs.com>"
 ARG MQ_URL=http://168.61.182.56:8001/IBM_MQ_9.1.0.3_UBUNTU_X86-64.tar.gz
 
 # The MQ packages to install
-ARG MQ_PACKAGES="ibmmq-server ibmmq-java ibmmq-jre ibmmq-gskit ibmmq-web ibmmq-msg-.*"
+ARG MQ_PACKAGES="ibmmq-runtime ibmmq-man ibmmq-server ibmmq-java ibmmq-jre ibmmq-gskit ibmmq-web ibmmq-msg-.*"
 
 RUN export DEBIAN_FRONTEND=noninteractive \
   # Install additional packages required by MQ, this install process and the runtime scripts
