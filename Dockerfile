@@ -14,11 +14,7 @@
 
 FROM ubuntu:16.04
 
-LABEL maintainer "Arthur Barr <arthur.barr@uk.ibm.com>, Rob Parker <PARROBE@uk.ibm.com>"
-
-LABEL "ProductID"="98102d16795c4263ad9ca075190a2d4d" \
-      "ProductName"="IBM MQ Advanced for Developers" \
-      "ProductVersion"="9.0.4"
+LABEL maintainer "Goru Santosh Rahul <gorusantosh.rahul1@tcs.com>"
 
 # The URL to download the MQ installer from in tar.gz format
 ARG MQ_URL=http://168.61.182.56:8001/IBM_MQ_9.1.0.3_UBUNTU_X86-64.tar.gz
